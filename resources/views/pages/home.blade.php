@@ -337,14 +337,14 @@
 
             </ul>
             {{--            $appPosts--}}
-            <div class="row mt-2 text-center">
+            <div class="row mt-2 text-center ">
                 @foreach($appPosts as $appPost)
 
-                    <div class="col-6 col-md p-1">
+                    <div class="col-6 col-md p-1 ">
                         <a href="{{route('post' , ['id'=>$appPost->id])}}">
-                        <div style="background-color: white;border-radius: 18px;" class="mx-1">
-                            <img src="{{asset($appPost->image)}}" alt="" class="img-fluid "
-                                 style="width: 90%;margin-top: 1rem;">
+                        <div style="background-color: white;border-radius: 18px;" class="mx-1  ">
+                            <img src="{{asset($appPost->image)}}" alt="" class="img-fluid object-fit-cover "
+                                 style="width: 90%;margin-top: 1rem;height:300px;">
                             <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;">{{$appPost->title}}</p>
                         </div>
                         </a>
@@ -450,7 +450,7 @@
                 @foreach($paymentPosts as $paymentPost)
                     <div class="col-6 col-md p-1">
                         <a href="{{route('post' , ['id'=>$paymentPost->id])}}">
-                        <div style="background-color: white;border-radius: 18px;" class="mx-1">
+                        <div style="background-color: white;border-radius: 18px;" class="mx-1 "     >
                             <img src="{{asset($paymentPost->image)}}" alt="" class="img-fluid "
                                  style="width: 90%;margin-top: 1rem;">
                             <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;"> {{($paymentPost->title)}}</p>
