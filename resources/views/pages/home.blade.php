@@ -340,13 +340,13 @@
             <div class="row mt-2 text-center ">
                 @foreach($appPosts as $appPost)
 
-                    <div class="col-6 col-md p-1 ">
+                    <div class="col-12 col-md p-1 ">
                         <a href="{{route('post' , ['id'=>$appPost->id])}}">
-                        <div style="background-color: white;border-radius: 18px;" class="mx-1  ">
-                            <img src="{{asset($appPost->image)}}" alt="" class="img-fluid object-fit-cover "
-                                 style="width: 90%;margin-top: 1rem;height:300px;">
-                            <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;">{{$appPost->title}}</p>
-                        </div>
+                            <div style="background-color: white;border-radius: 18px;" class="mx-1  ">
+                                <img src="{{asset($appPost->image)}}" alt="" class="img-fluid object-fit-cover "
+                                     style="width: 90%;margin-top: 1rem;height:300px;">
+                                <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;">{{$appPost->title}}</p>
+                            </div>
                         </a>
                     </div>
                 @endforeach
@@ -380,19 +380,17 @@
             </ul>
 
 
-
-
             {{--            $graphicPosts--}}
             <div class="row mt-2 text-center">
                 @foreach($graphicPosts as $graphicPost)
-                    <div class="col-6 col-md p-1">
+                    <div class="col-12 col-md p-1">
                         <a href="{{route('post' , ['id'=>$graphicPost->id])}}">
-                        <div style="background-color: white;border-radius: 18px;" class="mx-1">
-                            <img src="{{asset($graphicPost->image)}}" alt=""
-                                 class="img-fluid "
-                                 style="width: 90%;margin-top: 1rem;">
-                            <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;">{{$graphicPost->titl}}</p>
-                        </div>
+                            <div style="background-color: white;border-radius: 18px;" class="mx-1">
+                                <img src="{{asset($graphicPost->image)}}" alt=""
+                                     class="img-fluid "
+                                     style="width: 90%;margin-top: 1rem;height:300px;">
+                                <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;">{{$graphicPost->title}}</p>
+                            </div>
                         </a>
                     </div>
                 @endforeach
@@ -418,13 +416,13 @@
             <div class="row mt-2 text-center">
 
                 @foreach($networkPosts as $networkPost)
-                    <div class="col-6 col-md p-1">
+                    <div class="col-12 col-md p-1">
                         <a href="{{route('post' , ['id'=>$networkPost->id])}}">
-                        <div style="background-color: white;border-radius: 18px;" class="mx-1">
-                            <img src="{{asset($networkPost->image)}}" alt="" class="img-fluid "
-                                 style="width: 90%;margin-top: 1rem; height: 90%;">
-                            <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;"> {{$networkPost->title}} </p>
-                        </div>
+                            <div style="background-color: white;border-radius: 18px;" class="mx-1">
+                                <img src="{{asset($networkPost->image)}}" alt="" class="img-fluid "
+                                     style="width: 90%;margin-top: 1rem; height: 90%;">
+                                <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;"> {{$networkPost->title}} </p>
+                            </div>
                         </a>
                     </div>
                 @endforeach
@@ -450,13 +448,13 @@
             <div class="row mt-2 text-center">
 
                 @foreach($paymentPosts as $paymentPost)
-                    <div class="col-6 col-md p-1">
+                    <div class="col-12 col-md p-1">
                         <a href="{{route('post' , ['id'=>$paymentPost->id])}}">
-                        <div style="background-color: white;border-radius: 18px;" class="mx-1 "     >
-                            <img src="{{asset($paymentPost->image)}}" alt="" class="img-fluid "
-                                 style="width: 90%;margin-top: 1rem;">
-                            <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;"> {{($paymentPost->title)}}</p>
-                        </div>
+                            <div style="background-color: white;border-radius: 18px;" class="mx-1 ">
+                                <img src="{{asset($paymentPost->image)}}" alt="" class="img-fluid "
+                                     style="width: 90%;margin-top: 1rem;height:300px;">
+                                <p style="color: #004087;padding: 20px 0 20px 0;margin: 0;"> {{($paymentPost->title)}}</p>
+                            </div>
                         </a>
                     </div>
                 @endforeach
