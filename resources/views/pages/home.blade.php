@@ -380,6 +380,8 @@
             </ul>
 
 
+
+
             {{--            $graphicPosts--}}
             <div class="row mt-2 text-center">
                 @foreach($graphicPosts as $graphicPost)
